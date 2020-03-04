@@ -59,17 +59,24 @@ Plug 'tpope/vim-fugitive'
 " brew instll fzy; brew install rg
 Plug 'cloudhead/neovim-fuzzy'
 
+" vtr
+Plug 'christoomey/vim-tmux-runner'
 
 nnoremap <silent> <C-f> :FuzzyOpen<CR>
 nnoremap <silent> <C-s> :FuzzyGrep<CR>
 
+Plug 'KKPMW/sacredforest-vim'
+
 call plug#end()
 
-let g:airline_theme = "base16_harmonic16"
+set termguicolors
+colorscheme sacredforest
+
+let g:airline_theme = "base16_ocean"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#branch#enabled = 1
 let g:airline_powerline_fonts = 1
-let test#strategy = "neovim"
+let test#strategy = "vtr"
 
 nnoremap <silent> <C-h> :bprevious<CR>
 nnoremap <silent> <C-l> :bnext<CR>

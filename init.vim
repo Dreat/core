@@ -1,6 +1,5 @@
 :imap jk <Esc>
 :set number
-:set relativenumber
 set encoding=utf-8
 set hlsearch
 set incsearch
@@ -80,3 +79,4 @@ let test#strategy = "vtr"
 
 nnoremap <silent> <C-h> :bprevious<CR>
 nnoremap <silent> <C-l> :bnext<CR>
+:highlight Comment ctermfg=red guifg=red
